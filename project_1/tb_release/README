@@ -1,0 +1,35 @@
+##COL216 Assignment-5: ALU Design
+##Instructions for using the auto-checking testbench.
+
+1. This file gives out instructions to check if your design is matching the expectations.
+
+2. All the files needed for your assignment are included in the zip folder. You will need to add your code to the file ALU_entity.vhd. You can create additional file if you think it will help to create your assignment modular, but single file is also fine.
+
+3. Other files are as below. You are not supposed to edit any of these.
+    alu_golden.v - Golden reference design against which the testbench will check the functionality.
+    tb.vhd - the testbench file
+    rng_xoroshiro128plus.vhd - a random number generator to generate random inputs. 
+    Basys3_Master.xdc - the constraints file for Basys board to map ports to FPGA pins (same as used in last GPIO assignment).
+    test.tcl - the tcl file which can be sourced to run the simulation. It pulses the reset and then runs the simulation.
+
+3. The testbench automatically exercises various ALU operations using random values of operands and random combinations of immediate or register fields.
+
+4. To run a simulation, click on "Run Simulation" in Vivado left pane and then select "Run Behavioral Simulation." Once Simulation window pops up, in the Tcl console, paste the commands from the test.tcl file and waveform should get updated.
+
+5. After running the simulation using the testbench, you can check the value of the signal named "marks". It displays the marks obtained by you out of 75.
+
+6. You can debug your code by monitoring a signal named "error_signal" which goes high whenever a mismatch is detected in your code. At that instant in the waveform, you can check the values of operands, instruction and monitor the outputs to find out which output is different and fix it. The signals are named as *_golden or *_actual corresponding to golden design or your design.
+
+7. Once you verify and synthesize your design for the board, you will see the marks obtained by you being displayed on the 7-segment display as well as on the LED(15 downto 8). The marks are displayed in decimal number system.
+
+8. To indicate the completion of testing, the marks are valid only when LED0 is glowing.
+
+
+##Instructions for releasing the assignment on moodle
+1. Include only the files added by you in a zip file and submit. (Do not include the testbench and other files that are provided by us).
+
+2. The files provided by us shouldn't be changed by you. They are just to help you and should be treated as read only. If you change them, you will incur penalty during offline checking by our scripts.
+
+3. If you have just one file, you can submit it directly as vhdl without creating a zip file.
+
+4. The file name should include <entry_num1>_<entry_num2>.vhd or <entry_num1>_<entry_num2>.zip.

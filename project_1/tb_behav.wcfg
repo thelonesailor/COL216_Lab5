@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="66" />
+   <wvobject db_ref_id="1" fp_name="/tb/SW" type="array">
+      <obj_property name="ElementShortName">SW[15:0]</obj_property>
+      <obj_property name="ObjectShortName">SW[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/BTN" type="array">
+      <obj_property name="ElementShortName">BTN[4:0]</obj_property>
+      <obj_property name="ObjectShortName">BTN[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/LED" type="array">
+      <obj_property name="ElementShortName">LED[15:0]</obj_property>
+      <obj_property name="ObjectShortName">LED[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/SSEG_CA" type="array">
+      <obj_property name="ElementShortName">SSEG_CA[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SSEG_CA[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/SSEG_AN" type="array">
+      <obj_property name="ElementShortName">SSEG_AN[3:0]</obj_property>
+      <obj_property name="ObjectShortName">SSEG_AN[3:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/UART_TXD" type="logic">
+      <obj_property name="ElementShortName">UART_TXD</obj_property>
+      <obj_property name="ObjectShortName">UART_TXD</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/VGA_RED" type="array">
+      <obj_property name="ElementShortName">VGA_RED[3:0]</obj_property>
+      <obj_property name="ObjectShortName">VGA_RED[3:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/VGA_BLUE" type="array">
+      <obj_property name="ElementShortName">VGA_BLUE[3:0]</obj_property>
+      <obj_property name="ObjectShortName">VGA_BLUE[3:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/VGA_GREEN" type="array">
+      <obj_property name="ElementShortName">VGA_GREEN[3:0]</obj_property>
+      <obj_property name="ObjectShortName">VGA_GREEN[3:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/VGA_VS" type="logic">
+      <obj_property name="ElementShortName">VGA_VS</obj_property>
+      <obj_property name="ObjectShortName">VGA_VS</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/VGA_HS" type="logic">
+      <obj_property name="ElementShortName">VGA_HS</obj_property>
+      <obj_property name="ObjectShortName">VGA_HS</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/PS2_CLK" type="logic">
+      <obj_property name="ElementShortName">PS2_CLK</obj_property>
+      <obj_property name="ObjectShortName">PS2_CLK</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/PS2_DATA" type="logic">
+      <obj_property name="ElementShortName">PS2_DATA</obj_property>
+      <obj_property name="ObjectShortName">PS2_DATA</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/tmrCntr" type="array">
+      <obj_property name="ElementShortName">tmrCntr[26:0]</obj_property>
+      <obj_property name="ObjectShortName">tmrCntr[26:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/tmrVal" type="array">
+      <obj_property name="ElementShortName">tmrVal[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tmrVal[3:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/btnReg" type="array">
+      <obj_property name="ElementShortName">btnReg[3:0]</obj_property>
+      <obj_property name="ObjectShortName">btnReg[3:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/btnDetect" type="logic">
+      <obj_property name="ElementShortName">btnDetect</obj_property>
+      <obj_property name="ObjectShortName">btnDetect</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/btnDeBnc" type="array">
+      <obj_property name="ElementShortName">btnDeBnc[4:0]</obj_property>
+      <obj_property name="ObjectShortName">btnDeBnc[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/clk_cntr_reg" type="array">
+      <obj_property name="ElementShortName">clk_cntr_reg[4:0]</obj_property>
+      <obj_property name="ObjectShortName">clk_cntr_reg[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/reset_cntr" type="array">
+      <obj_property name="ElementShortName">reset_cntr[17:0]</obj_property>
+      <obj_property name="ObjectShortName">reset_cntr[17:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/op1_golden" type="array">
+      <obj_property name="ElementShortName">op1_golden[31:0]</obj_property>
+      <obj_property name="ObjectShortName">op1_golden[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/op2_golden" type="array">
+      <obj_property name="ElementShortName">op2_golden[31:0]</obj_property>
+      <obj_property name="ObjectShortName">op2_golden[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/res_golden" type="array">
+      <obj_property name="ElementShortName">res_golden[31:0]</obj_property>
+      <obj_property name="ObjectShortName">res_golden[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/instr_golden" type="array">
+      <obj_property name="ElementShortName">instr_golden[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr_golden[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/N_in_golden" type="logic">
+      <obj_property name="ElementShortName">N_in_golden</obj_property>
+      <obj_property name="ObjectShortName">N_in_golden</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/Z_in_golden" type="logic">
+      <obj_property name="ElementShortName">Z_in_golden</obj_property>
+      <obj_property name="ObjectShortName">Z_in_golden</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/C_in_golden" type="logic">
+      <obj_property name="ElementShortName">C_in_golden</obj_property>
+      <obj_property name="ObjectShortName">C_in_golden</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/V_in_golden" type="logic">
+      <obj_property name="ElementShortName">V_in_golden</obj_property>
+      <obj_property name="ObjectShortName">V_in_golden</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/next_N_golden" type="logic">
+      <obj_property name="ElementShortName">next_N_golden</obj_property>
+      <obj_property name="ObjectShortName">next_N_golden</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/next_Z_golden" type="logic">
+      <obj_property name="ElementShortName">next_Z_golden</obj_property>
+      <obj_property name="ObjectShortName">next_Z_golden</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/next_C_golden" type="logic">
+      <obj_property name="ElementShortName">next_C_golden</obj_property>
+      <obj_property name="ObjectShortName">next_C_golden</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/next_V_golden" type="logic">
+      <obj_property name="ElementShortName">next_V_golden</obj_property>
+      <obj_property name="ObjectShortName">next_V_golden</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/predicate_golden" type="logic">
+      <obj_property name="ElementShortName">predicate_golden</obj_property>
+      <obj_property name="ObjectShortName">predicate_golden</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/shifter_carry_golden" type="logic">
+      <obj_property name="ElementShortName">shifter_carry_golden</obj_property>
+      <obj_property name="ObjectShortName">shifter_carry_golden</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/op1_actual" type="array">
+      <obj_property name="ElementShortName">op1_actual[31:0]</obj_property>
+      <obj_property name="ObjectShortName">op1_actual[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/op2_actual" type="array">
+      <obj_property name="ElementShortName">op2_actual[31:0]</obj_property>
+      <obj_property name="ObjectShortName">op2_actual[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/res_actual" type="array">
+      <obj_property name="ElementShortName">res_actual[31:0]</obj_property>
+      <obj_property name="ObjectShortName">res_actual[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/instr_actual" type="array">
+      <obj_property name="ElementShortName">instr_actual[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr_actual[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/N_in_actual" type="logic">
+      <obj_property name="ElementShortName">N_in_actual</obj_property>
+      <obj_property name="ObjectShortName">N_in_actual</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/Z_in_actual" type="logic">
+      <obj_property name="ElementShortName">Z_in_actual</obj_property>
+      <obj_property name="ObjectShortName">Z_in_actual</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/C_in_actual" type="logic">
+      <obj_property name="ElementShortName">C_in_actual</obj_property>
+      <obj_property name="ObjectShortName">C_in_actual</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/V_in_actual" type="logic">
+      <obj_property name="ElementShortName">V_in_actual</obj_property>
+      <obj_property name="ObjectShortName">V_in_actual</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/next_N_actual" type="logic">
+      <obj_property name="ElementShortName">next_N_actual</obj_property>
+      <obj_property name="ObjectShortName">next_N_actual</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/next_Z_actual" type="logic">
+      <obj_property name="ElementShortName">next_Z_actual</obj_property>
+      <obj_property name="ObjectShortName">next_Z_actual</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/next_C_actual" type="logic">
+      <obj_property name="ElementShortName">next_C_actual</obj_property>
+      <obj_property name="ObjectShortName">next_C_actual</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/next_V_actual" type="logic">
+      <obj_property name="ElementShortName">next_V_actual</obj_property>
+      <obj_property name="ObjectShortName">next_V_actual</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/predicate_actual" type="logic">
+      <obj_property name="ElementShortName">predicate_actual</obj_property>
+      <obj_property name="ObjectShortName">predicate_actual</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/shifter_carry_actual" type="logic">
+      <obj_property name="ElementShortName">shifter_carry_actual</obj_property>
+      <obj_property name="ObjectShortName">shifter_carry_actual</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/instr_temp" type="array">
+      <obj_property name="ElementShortName">instr_temp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr_temp[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/test_mode" type="other">
+      <obj_property name="ElementShortName">test_mode</obj_property>
+      <obj_property name="ObjectShortName">test_mode</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/error_signal" type="logic">
+      <obj_property name="ElementShortName">error_signal</obj_property>
+      <obj_property name="ObjectShortName">error_signal</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/error_count" type="array">
+      <obj_property name="ElementShortName">error_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">error_count[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/marks" type="array">
+      <obj_property name="ElementShortName">marks[31:0]</obj_property>
+      <obj_property name="ObjectShortName">marks[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/total_count" type="array">
+      <obj_property name="ElementShortName">total_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">total_count[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/test_num" type="array">
+      <obj_property name="ElementShortName">test_num[3:0]</obj_property>
+      <obj_property name="ObjectShortName">test_num[3:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/prng_data" type="array">
+      <obj_property name="ElementShortName">prng_data[63:0]</obj_property>
+      <obj_property name="ObjectShortName">prng_data[63:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/an_bit0" type="logic">
+      <obj_property name="ElementShortName">an_bit0</obj_property>
+      <obj_property name="ObjectShortName">an_bit0</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/ssd_signal" type="array">
+      <obj_property name="ElementShortName">ssd_signal[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ssd_signal[3:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/test_done" type="logic">
+      <obj_property name="ElementShortName">test_done</obj_property>
+      <obj_property name="ObjectShortName">test_done</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/TMR_CNTR_MAX" type="array">
+      <obj_property name="ElementShortName">TMR_CNTR_MAX[26:0]</obj_property>
+      <obj_property name="ObjectShortName">TMR_CNTR_MAX[26:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/TMR_VAL_MAX" type="array">
+      <obj_property name="ElementShortName">TMR_VAL_MAX[3:0]</obj_property>
+      <obj_property name="ObjectShortName">TMR_VAL_MAX[3:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/RESET_CNTR_MAX" type="array">
+      <obj_property name="ElementShortName">RESET_CNTR_MAX[17:0]</obj_property>
+      <obj_property name="ObjectShortName">RESET_CNTR_MAX[17:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/MAX_STR_LEN" type="other">
+      <obj_property name="ElementShortName">MAX_STR_LEN</obj_property>
+      <obj_property name="ObjectShortName">MAX_STR_LEN</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/WELCOME_STR_LEN" type="other">
+      <obj_property name="ElementShortName">WELCOME_STR_LEN</obj_property>
+      <obj_property name="ObjectShortName">WELCOME_STR_LEN</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb/BTN_STR_LEN" type="other">
+      <obj_property name="ElementShortName">BTN_STR_LEN</obj_property>
+      <obj_property name="ObjectShortName">BTN_STR_LEN</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

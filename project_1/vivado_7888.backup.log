@@ -1,0 +1,2740 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sat Feb 25 10:26:40 2017
+# Process ID: 4936
+# Log file: C:/Users/Prakhar/Downloads/project_1/vivado.log
+# Journal file: C:/Users/Prakhar/Downloads/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Prakhar/Downloads/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2014.4/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:09 . Memory (MB): peak = 691.281 ; gain = 149.016
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+"xvlog -m64 -prj tb_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARM_alu_gold
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 -prj tb_vhdl.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ARM_alu
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rng_xoroshiro128plus
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 1c0c2746135f4662bbafa966a917c4d6 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:2960]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:3020]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.x_lut3_mux4
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.ARM_alu_gold
+Compiling architecture behavioral of entity xil_defaultlib.ARM_alu [arm_alu_default]
+Compiling architecture xoroshiro128plus_arch of entity xil_defaultlib.rng_xoroshiro128plus [\rng_xoroshiro128plus("000000010...]
+Compiling architecture behavioral of entity xil_defaultlib.tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 3325166256 -regid "211314770_0_0_464" -xml C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav..."
+    (file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Feb 25 10:28:01 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 721.547 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config {C:/Users/Prakhar/Downloads/project_1\tb_behav.wcfg}
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 721.547 ; gain = 0.000
+#forcing SW to prevent U values on LEDs
+add_force {/tb/SW} -radix hex {0000 0ns}
+force1
+#pulsing BTN to create reset signal
+add_force {/tb/BTN} -radix bin {10000 0ns}
+force2
+add_force {/tb/CLK} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+force3
+run 50
+#release BTN to release reset
+add_force {/tb/BTN} -radix hex {0 0ns}
+force4
+#run for some time
+run 100
+run 1000
+run 1000
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library work [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd:1]
+[Sat Feb 25 10:30:51 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Prakhar/Downloads/project_1/project_1.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+"xvlog -m64 -prj tb_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARM_alu_gold
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 -prj tb_vhdl.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ARM_alu
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rng_xoroshiro128plus
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 1c0c2746135f4662bbafa966a917c4d6 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:2960]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:3020]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.x_lut3_mux4
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.ARM_alu_gold
+Compiling architecture behavioral of entity xil_defaultlib.ARM_alu [arm_alu_default]
+Compiling architecture xoroshiro128plus_arch of entity xil_defaultlib.rng_xoroshiro128plus [\rng_xoroshiro128plus("000000010...]
+Compiling architecture behavioral of entity xil_defaultlib.tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 1266095393 -regid "211314770_0_0_464" -xml C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav..."
+    (file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Feb 25 10:31:36 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 752.926 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config {C:/Users/Prakhar/Downloads/project_1\tb_behav.wcfg}
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 752.926 ; gain = 0.000
+#forcing SW to prevent U values on LEDs
+add_force {/tb/SW} -radix hex {0000 0ns}
+force5
+#pulsing BTN to create reset signal
+add_force {/tb/BTN} -radix bin {10000 0ns}
+force6
+add_force {/tb/CLK} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+force7
+run 50
+#release BTN to release reset
+add_force {/tb/BTN} -radix hex {0 0ns}
+force8
+#run for some time
+run 100
+run 1000
+run 1000
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library work [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd:1]
+[Sat Feb 25 10:32:34 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Prakhar/Downloads/project_1/project_1.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+"xvlog -m64 -prj tb_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARM_alu_gold
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 -prj tb_vhdl.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ARM_alu
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rng_xoroshiro128plus
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 1c0c2746135f4662bbafa966a917c4d6 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:2960]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:3020]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.x_lut3_mux4
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.ARM_alu_gold
+Compiling architecture behavioral of entity xil_defaultlib.ARM_alu [arm_alu_default]
+Compiling architecture xoroshiro128plus_arch of entity xil_defaultlib.rng_xoroshiro128plus [\rng_xoroshiro128plus("000000010...]
+Compiling architecture behavioral of entity xil_defaultlib.tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 2492334464 -regid "211314770_0_0_464" -xml C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav..."
+    (file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Feb 25 10:33:20 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 770.340 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config {C:/Users/Prakhar/Downloads/project_1\tb_behav.wcfg}
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 770.340 ; gain = 0.000
+#forcing SW to prevent U values on LEDs
+add_force {/tb/SW} -radix hex {0000 0ns}
+force9
+#pulsing BTN to create reset signal
+add_force {/tb/BTN} -radix bin {10000 0ns}
+force10
+add_force {/tb/CLK} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+force11
+run 50
+#release BTN to release reset
+add_force {/tb/BTN} -radix hex {0 0ns}
+force12
+#run for some time
+run 100
+run 1000
+run 1000
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library work [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd:1]
+[Sat Feb 25 10:34:40 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Prakhar/Downloads/project_1/project_1.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+"xvlog -m64 -prj tb_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARM_alu_gold
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 -prj tb_vhdl.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ARM_alu
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rng_xoroshiro128plus
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 1c0c2746135f4662bbafa966a917c4d6 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:2960]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:3020]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.x_lut3_mux4
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.ARM_alu_gold
+Compiling architecture behavioral of entity xil_defaultlib.ARM_alu [arm_alu_default]
+Compiling architecture xoroshiro128plus_arch of entity xil_defaultlib.rng_xoroshiro128plus [\rng_xoroshiro128plus("000000010...]
+Compiling architecture behavioral of entity xil_defaultlib.tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 2719874804 -regid "211314770_0_0_464" -xml C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav..."
+    (file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Feb 25 10:35:22 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 770.340 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config {C:/Users/Prakhar/Downloads/project_1\tb_behav.wcfg}
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 770.340 ; gain = 0.000
+#forcing SW to prevent U values on LEDs
+add_force {/tb/SW} -radix hex {0000 0ns}
+force13
+#pulsing BTN to create reset signal
+add_force {/tb/BTN} -radix bin {10000 0ns}
+force14
+add_force {/tb/CLK} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+force15
+run 50
+#release BTN to release reset
+add_force {/tb/BTN} -radix hex {0 0ns}
+force16
+#run for some time
+run 100
+run 1000
+run 1000
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library work [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd:1]
+[Sat Feb 25 10:36:18 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Prakhar/Downloads/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1
+[Sat Feb 25 10:36:45 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Prakhar/Downloads/project_1/project_1.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+"xvlog -m64 -prj tb_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARM_alu_gold
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 -prj tb_vhdl.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ARM_alu
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rng_xoroshiro128plus
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 1c0c2746135f4662bbafa966a917c4d6 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:2960]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:3020]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.x_lut3_mux4
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.ARM_alu_gold
+Compiling architecture behavioral of entity xil_defaultlib.ARM_alu [arm_alu_default]
+Compiling architecture xoroshiro128plus_arch of entity xil_defaultlib.rng_xoroshiro128plus [\rng_xoroshiro128plus("000000010...]
+Compiling architecture behavioral of entity xil_defaultlib.tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 199150845 -regid "211314770_0_0_464" -xml C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/..."
+    (file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Feb 25 10:37:07 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 785.027 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config {C:/Users/Prakhar/Downloads/project_1\tb_behav.wcfg}
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 785.027 ; gain = 0.000
+#forcing SW to prevent U values on LEDs
+add_force {/tb/SW} -radix hex {0000 0ns}
+force17
+#pulsing BTN to create reset signal
+add_force {/tb/BTN} -radix bin {10000 0ns}
+force18
+add_force {/tb/CLK} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+force19
+run 50
+#release BTN to release reset
+add_force {/tb/BTN} -radix hex {0 0ns}
+force20
+#run for some time
+run 100
+run 1000
+run 1000
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library work [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd:1]
+[Sat Feb 25 10:38:29 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Prakhar/Downloads/project_1/project_1.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+"xvlog -m64 -prj tb_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARM_alu_gold
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 -prj tb_vhdl.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ARM_alu
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rng_xoroshiro128plus
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 1c0c2746135f4662bbafa966a917c4d6 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:2960]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:3020]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.x_lut3_mux4
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.ARM_alu_gold
+Compiling architecture behavioral of entity xil_defaultlib.ARM_alu [arm_alu_default]
+Compiling architecture xoroshiro128plus_arch of entity xil_defaultlib.rng_xoroshiro128plus [\rng_xoroshiro128plus("000000010...]
+Compiling architecture behavioral of entity xil_defaultlib.tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 1052798756 -regid "211314770_0_0_464" -xml C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav..."
+    (file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Feb 25 10:39:21 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 816.293 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config {C:/Users/Prakhar/Downloads/project_1\tb_behav.wcfg}
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 816.293 ; gain = 0.000
+#forcing SW to prevent U values on LEDs
+add_force {/tb/SW} -radix hex {0000 0ns}
+force21
+#pulsing BTN to create reset signal
+add_force {/tb/BTN} -radix bin {10000 0ns}
+force22
+add_force {/tb/CLK} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+force23
+run 50
+#release BTN to release reset
+add_force {/tb/BTN} -radix hex {0 0ns}
+force24
+#run for some time
+run 100
+run 1000
+run 1000
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library work [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd:1]
+[Sat Feb 25 10:40:45 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Prakhar/Downloads/project_1/project_1.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+"xvlog -m64 -prj tb_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARM_alu_gold
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 -prj tb_vhdl.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ARM_alu
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rng_xoroshiro128plus
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 1c0c2746135f4662bbafa966a917c4d6 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:2960]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:3020]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.x_lut3_mux4
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.ARM_alu_gold
+Compiling architecture behavioral of entity xil_defaultlib.ARM_alu [arm_alu_default]
+Compiling architecture xoroshiro128plus_arch of entity xil_defaultlib.rng_xoroshiro128plus [\rng_xoroshiro128plus("000000010...]
+Compiling architecture behavioral of entity xil_defaultlib.tb
+Waiting for 1 sub-compilation(s) to finish...
+Built simulation snapshot tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 1740514101 -regid "211314770_0_0_464" -xml C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav..."
+    (file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Feb 25 10:41:29 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 849.703 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config {C:/Users/Prakhar/Downloads/project_1\tb_behav.wcfg}
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 849.703 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+"xvlog -m64 -prj tb_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARM_alu_gold
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 -prj tb_vhdl.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ARM_alu
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rng_xoroshiro128plus
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 1c0c2746135f4662bbafa966a917c4d6 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:2960]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:3020]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.x_lut3_mux4
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.ARM_alu_gold
+Compiling architecture behavioral of entity xil_defaultlib.ARM_alu [arm_alu_default]
+Compiling architecture xoroshiro128plus_arch of entity xil_defaultlib.rng_xoroshiro128plus [\rng_xoroshiro128plus("000000010...]
+Compiling architecture behavioral of entity xil_defaultlib.tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 2859922520 -regid "211314770_0_0_464" -xml C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav..."
+    (file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Feb 25 10:41:52 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 849.703 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config {C:/Users/Prakhar/Downloads/project_1\tb_behav.wcfg}
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 849.703 ; gain = 0.000
+#forcing SW to prevent U values on LEDs
+add_force {/tb/SW} -radix hex {0000 0ns}
+force25
+#pulsing BTN to create reset signal
+add_force {/tb/BTN} -radix bin {10000 0ns}
+force26
+add_force {/tb/CLK} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+force27
+run 50
+#release BTN to release reset
+add_force {/tb/BTN} -radix hex {0 0ns}
+force28
+#run for some time
+run 100
+run 1000
+run 1000
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library work [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd:1]
+[Sat Feb 25 10:46:10 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Prakhar/Downloads/project_1/project_1.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+"xvlog -m64 -prj tb_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARM_alu_gold
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 -prj tb_vhdl.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ARM_alu
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rng_xoroshiro128plus
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 1c0c2746135f4662bbafa966a917c4d6 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:2960]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:3020]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.x_lut3_mux4
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.ARM_alu_gold
+Compiling architecture behavioral of entity xil_defaultlib.ARM_alu [arm_alu_default]
+Compiling architecture xoroshiro128plus_arch of entity xil_defaultlib.rng_xoroshiro128plus [\rng_xoroshiro128plus("000000010...]
+Compiling architecture behavioral of entity xil_defaultlib.tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 759165378 -regid "211314770_0_0_464" -xml C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/..."
+    (file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Feb 25 10:46:57 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 849.703 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config {C:/Users/Prakhar/Downloads/project_1\tb_behav.wcfg}
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 849.703 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+"xvlog -m64 -prj tb_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARM_alu_gold
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 -prj tb_vhdl.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ARM_alu
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rng_xoroshiro128plus
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 1c0c2746135f4662bbafa966a917c4d6 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:2960]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:3020]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.x_lut3_mux4
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.ARM_alu_gold
+Compiling architecture behavioral of entity xil_defaultlib.ARM_alu [arm_alu_default]
+Compiling architecture xoroshiro128plus_arch of entity xil_defaultlib.rng_xoroshiro128plus [\rng_xoroshiro128plus("000000010...]
+Compiling architecture behavioral of entity xil_defaultlib.tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 2104528189 -regid "211314770_0_0_464" -xml C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav..."
+    (file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Feb 25 10:47:21 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 849.703 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config {C:/Users/Prakhar/Downloads/project_1\tb_behav.wcfg}
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 849.703 ; gain = 0.000
+#forcing SW to prevent U values on LEDs
+add_force {/tb/SW} -radix hex {0000 0ns}
+force29
+#pulsing BTN to create reset signal
+add_force {/tb/BTN} -radix bin {10000 0ns}
+force30
+add_force {/tb/CLK} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+force31
+run 50
+#release BTN to release reset
+add_force {/tb/BTN} -radix hex {0 0ns}
+force32
+#run for some time
+run 100
+run 1000
+run 1000
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library work [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd:1]
+[Sat Feb 25 11:01:39 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Prakhar/Downloads/project_1/project_1.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library work [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd:1]
+[Sat Feb 25 11:03:05 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Prakhar/Downloads/project_1/project_1.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+"xvlog -m64 -prj tb_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARM_alu_gold
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 -prj tb_vhdl.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ARM_alu
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rng_xoroshiro128plus
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 1c0c2746135f4662bbafa966a917c4d6 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:2960]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:3020]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.x_lut3_mux4
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.ARM_alu_gold
+Compiling architecture behavioral of entity xil_defaultlib.ARM_alu [arm_alu_default]
+Compiling architecture xoroshiro128plus_arch of entity xil_defaultlib.rng_xoroshiro128plus [\rng_xoroshiro128plus("000000010...]
+Compiling architecture behavioral of entity xil_defaultlib.tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 2385509745 -regid "211314770_0_0_464" -xml C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav..."
+    (file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Feb 25 11:04:05 2017...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 849.703 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config {C:/Users/Prakhar/Downloads/project_1\tb_behav.wcfg}
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 849.703 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+"xvlog -m64 -prj tb_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARM_alu_gold
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 -prj tb_vhdl.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ARM_alu
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rng_xoroshiro128plus
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 1c0c2746135f4662bbafa966a917c4d6 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:2960]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:3020]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.x_lut3_mux4
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.ARM_alu_gold
+Compiling architecture behavioral of entity xil_defaultlib.ARM_alu [arm_alu_default]
+Compiling architecture xoroshiro128plus_arch of entity xil_defaultlib.rng_xoroshiro128plus [\rng_xoroshiro128plus("000000010...]
+Compiling architecture behavioral of entity xil_defaultlib.tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 1609307527 -regid "211314770_0_0_464" -xml C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav..."
+    (file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Feb 25 11:04:31 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 849.703 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config {C:/Users/Prakhar/Downloads/project_1\tb_behav.wcfg}
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 849.703 ; gain = 0.000
+#forcing SW to prevent U values on LEDs
+add_force {/tb/SW} -radix hex {0000 0ns}
+force33
+#pulsing BTN to create reset signal
+add_force {/tb/BTN} -radix bin {10000 0ns}
+force34
+add_force {/tb/CLK} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+force35
+run 50
+#release BTN to release reset
+add_force {/tb/BTN} -radix hex {0 0ns}
+force36
+#run for some time
+run 100
+run 1000
+run 1000
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library work [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd:1]
+[Sat Feb 25 11:05:56 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Prakhar/Downloads/project_1/project_1.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+"xvlog -m64 -prj tb_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARM_alu_gold
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 -prj tb_vhdl.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ARM_alu
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rng_xoroshiro128plus
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 1c0c2746135f4662bbafa966a917c4d6 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:2960]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:3020]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.x_lut3_mux4
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.ARM_alu_gold
+Compiling architecture behavioral of entity xil_defaultlib.ARM_alu [arm_alu_default]
+Compiling architecture xoroshiro128plus_arch of entity xil_defaultlib.rng_xoroshiro128plus [\rng_xoroshiro128plus("000000010...]
+Compiling architecture behavioral of entity xil_defaultlib.tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 1667879538 -regid "211314770_0_0_464" -xml C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav..."
+    (file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Feb 25 11:06:45 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 849.703 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config {C:/Users/Prakhar/Downloads/project_1\tb_behav.wcfg}
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 849.703 ; gain = 0.000
+#forcing SW to prevent U values on LEDs
+add_force {/tb/SW} -radix hex {0000 0ns}
+force37
+#pulsing BTN to create reset signal
+add_force {/tb/BTN} -radix bin {10000 0ns}
+force38
+add_force {/tb/CLK} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+force39
+run 50
+#release BTN to release reset
+add_force {/tb/BTN} -radix hex {0 0ns}
+force40
+#run for some time
+run 100
+run 1000
+run 1000
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library work [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd:1]
+[Sat Feb 25 11:09:51 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Prakhar/Downloads/project_1/project_1.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library work [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd:1]
+[Sat Feb 25 11:15:18 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Prakhar/Downloads/project_1/project_1.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+"xvlog -m64 -prj tb_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARM_alu_gold
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 -prj tb_vhdl.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ARM_alu
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rng_xoroshiro128plus
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 1c0c2746135f4662bbafa966a917c4d6 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:2960]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:3020]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.x_lut3_mux4
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.ARM_alu_gold
+Compiling architecture behavioral of entity xil_defaultlib.ARM_alu [arm_alu_default]
+Compiling architecture xoroshiro128plus_arch of entity xil_defaultlib.rng_xoroshiro128plus [\rng_xoroshiro128plus("000000010...]
+Compiling architecture behavioral of entity xil_defaultlib.tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 1620240153 -regid "211314770_0_0_464" -xml C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav..."
+    (file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Feb 25 11:16:25 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 849.703 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config {C:/Users/Prakhar/Downloads/project_1\tb_behav.wcfg}
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 849.703 ; gain = 0.000
+#forcing SW to prevent U values on LEDs
+add_force {/tb/SW} -radix hex {0000 0ns}
+force41
+#pulsing BTN to create reset signal
+add_force {/tb/BTN} -radix bin {10000 0ns}
+force42
+add_force {/tb/CLK} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+force43
+run 50
+#release BTN to release reset
+add_force {/tb/BTN} -radix hex {0 0ns}
+force44
+#run for some time
+run 100
+run 1000
+run 1000
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library work [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd:1]
+[Sat Feb 25 11:18:22 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Prakhar/Downloads/project_1/project_1.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library work [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd:1]
+[Sat Feb 25 11:28:22 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Prakhar/Downloads/project_1/project_1.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 849.703 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+"xvlog -m64 -prj tb_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARM_alu_gold
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 -prj tb_vhdl.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ARM_alu
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rng_xoroshiro128plus
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 1c0c2746135f4662bbafa966a917c4d6 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:2960]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:3020]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.x_lut3_mux4
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.ARM_alu_gold
+Compiling architecture behavioral of entity xil_defaultlib.ARM_alu [arm_alu_default]
+Compiling architecture xoroshiro128plus_arch of entity xil_defaultlib.rng_xoroshiro128plus [\rng_xoroshiro128plus("000000010...]
+Compiling architecture behavioral of entity xil_defaultlib.tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 3736246848 -regid "211314770_0_0_464" -xml C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav..."
+    (file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Feb 25 11:29:29 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 849.703 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config {C:/Users/Prakhar/Downloads/project_1\tb_behav.wcfg}
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 849.703 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 849.703 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+"xvlog -m64 -prj tb_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARM_alu_gold
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 -prj tb_vhdl.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ARM_alu
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rng_xoroshiro128plus
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 1c0c2746135f4662bbafa966a917c4d6 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:2960]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:3020]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.x_lut3_mux4
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.ARM_alu_gold
+Compiling architecture behavioral of entity xil_defaultlib.ARM_alu [arm_alu_default]
+Compiling architecture xoroshiro128plus_arch of entity xil_defaultlib.rng_xoroshiro128plus [\rng_xoroshiro128plus("000000010...]
+Compiling architecture behavioral of entity xil_defaultlib.tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 1011912718 -regid "211314770_0_0_464" -xml C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav..."
+    (file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Feb 25 11:30:02 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 849.703 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config {C:/Users/Prakhar/Downloads/project_1\tb_behav.wcfg}
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 849.703 ; gain = 0.000
+#forcing SW to prevent U values on LEDs
+add_force {/tb/SW} -radix hex {0000 0ns}
+force45
+#pulsing BTN to create reset signal
+add_force {/tb/BTN} -radix bin {10000 0ns}
+force46
+add_force {/tb/CLK} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+force47
+run 50
+#release BTN to release reset
+add_force {/tb/BTN} -radix hex {0 0ns}
+force48
+#run for some time
+run 100
+Note: Error counter updated by 1
+Time: 1060 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1070 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 1070 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1100 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1140 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 1140 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1150 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+run 1000
+Note: Error counter updated by 1
+Time: 1160 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 1160 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1170 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1180 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 1180 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1190 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1200 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 1200 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1210 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1220 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 1220 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1230 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1240 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 1240 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1250 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1260 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 1260 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1270 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1280 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 1280 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1290 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1300 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 1300 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1310 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1320 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 1320 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1330 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1340 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 1340 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1350 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1360 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 1360 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1370 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1380 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 1380 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1390 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1400 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 1400 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1410 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1420 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 1420 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1430 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1440 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 1440 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1450 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1460 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 1460 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1470 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1480 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 1480 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1490 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1520 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 1520 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1530 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1560 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 1560 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1630 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1640 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 1640 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1740 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1750 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 1750 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1780 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1790 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 1790 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1800 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1810 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 1810 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1820 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1830 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 1830 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1840 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1850 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 1850 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1860 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1870 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 1870 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1880 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1890 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 1890 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1900 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1910 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 1910 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1930 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 2080 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 2080 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+run 1000
+Note: Error counter updated by 1
+Time: 2340 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 2360 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 2360 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 2380 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 2390 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 2390 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 2400 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 2410 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 2410 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 2420 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 2430 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 2430 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 2440 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 2450 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 2450 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 2460 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 2470 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 2470 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 2490 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 2500 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 2500 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 2530 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+#forcing SW to prevent U values on LEDs
+add_force {/tb/SW} -radix hex {0000 0ns}
+force49
+#pulsing BTN to create reset signal
+add_force {/tb/BTN} -radix bin {10000 0ns}
+force50
+add_force {/tb/CLK} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+force51
+run 50
+#release BTN to release reset
+add_force {/tb/BTN} -radix hex {0 0ns}
+force52
+#run for some time
+run 100
+Note: Error counter updated by 1
+Time: 3250 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3290 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 3290 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3300 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+run 1000
+Note: Error counter updated by 1
+Time: 3310 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 3310 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3320 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3330 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 3330 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3340 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3350 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 3350 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3360 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3370 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 3370 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3380 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3390 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 3390 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3400 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3410 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 3410 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3420 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3430 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 3430 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3440 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3450 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 3450 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3460 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3470 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 3470 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3480 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3490 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 3490 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3500 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3510 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 3510 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3520 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3530 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 3530 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3540 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3550 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 3550 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3560 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3570 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 3570 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3580 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3590 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 3590 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3600 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3610 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 3610 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3620 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3630 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 3630 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3640 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3670 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 3670 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3680 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3710 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 3710 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3780 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3790 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 3790 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3890 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3900 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 3900 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3930 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3940 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 3940 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3950 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3960 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 3960 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3970 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3980 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 3980 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 3990 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 4 us  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 4 us  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 4010 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 4020 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 4020 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 4030 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 4040 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 4040 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 4050 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 4060 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 4060 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 4080 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 4230 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 4230 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+run 1000
+Note: Error counter updated by 1
+Time: 4490 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 4510 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 4510 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 4530 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 4540 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 4540 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 4550 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 4560 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 4560 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 4570 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 4580 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 4580 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 4590 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 4600 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 4600 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 4610 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 4620 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 4620 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 4640 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 4650 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 4650 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 4680 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library work [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd:1]
+[Sat Feb 25 11:30:50 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Prakhar/Downloads/project_1/project_1.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 849.703 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+"xvlog -m64 -prj tb_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARM_alu_gold
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 -prj tb_vhdl.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ARM_alu
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rng_xoroshiro128plus
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 1c0c2746135f4662bbafa966a917c4d6 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:2960]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:3020]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.x_lut3_mux4
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.ARM_alu_gold
+Compiling architecture behavioral of entity xil_defaultlib.ARM_alu [arm_alu_default]
+Compiling architecture xoroshiro128plus_arch of entity xil_defaultlib.rng_xoroshiro128plus [\rng_xoroshiro128plus("000000010...]
+Compiling architecture behavioral of entity xil_defaultlib.tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 291578701 -regid "211314770_0_0_464" -xml C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/..."
+    (file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Feb 25 11:31:36 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 849.703 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config {C:/Users/Prakhar/Downloads/project_1\tb_behav.wcfg}
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 849.703 ; gain = 0.000
+#forcing SW to prevent U values on LEDs
+add_force {/tb/SW} -radix hex {0000 0ns}
+force53
+#pulsing BTN to create reset signal
+add_force {/tb/BTN} -radix bin {10000 0ns}
+force54
+add_force {/tb/CLK} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+force55
+run 50
+#release BTN to release reset
+add_force {/tb/BTN} -radix hex {0 0ns}
+force56
+#run for some time
+run 100
+run 1000
+Note: Error counter updated by 1
+Time: 1190 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1820 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 1820 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Error counter updated by 1
+Time: 1840 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+run 1000
+Note: Error counter updated by 1
+Time: 2530 ns  Iteration: 0  Process: /tb/perror_count  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+Note: Marks decreased by 1
+Time: 2530 ns  Iteration: 0  Process: /tb/pmarks  File: C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library work [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd:1]
+[Sat Feb 25 11:33:58 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Prakhar/Downloads/project_1/project_1.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library work [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd:1]
+[Sat Feb 25 11:34:21 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Prakhar/Downloads/project_1/project_1.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 849.703 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+"xvlog -m64 -prj tb_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARM_alu_gold
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 -prj tb_vhdl.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ARM_alu
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rng_xoroshiro128plus
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 1c0c2746135f4662bbafa966a917c4d6 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:2960]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:3020]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.x_lut3_mux4
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.ARM_alu_gold
+Compiling architecture behavioral of entity xil_defaultlib.ARM_alu [arm_alu_default]
+Compiling architecture xoroshiro128plus_arch of entity xil_defaultlib.rng_xoroshiro128plus [\rng_xoroshiro128plus("000000010...]
+Compiling architecture behavioral of entity xil_defaultlib.tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 4197012482 -regid "211314770_0_0_464" -xml C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav..."
+    (file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Feb 25 11:35:05 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 849.703 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config {C:/Users/Prakhar/Downloads/project_1\tb_behav.wcfg}
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 849.703 ; gain = 0.000
+#forcing SW to prevent U values on LEDs
+add_force {/tb/SW} -radix hex {0000 0ns}
+force57
+#pulsing BTN to create reset signal
+add_force {/tb/BTN} -radix bin {10000 0ns}
+force58
+add_force {/tb/CLK} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+force59
+run 50
+#release BTN to release reset
+add_force {/tb/BTN} -radix hex {0 0ns}
+force60
+#run for some time
+run 100
+run 1000
+run 1000
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library work [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd:1]
+[Sat Feb 25 11:35:47 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Prakhar/Downloads/project_1/project_1.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 857.824 ; gain = 8.121
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+"xvlog -m64 -prj tb_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARM_alu_gold
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 -prj tb_vhdl.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/new/ARM_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ARM_alu
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rng_xoroshiro128plus
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 1c0c2746135f4662bbafa966a917c4d6 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:2960]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port CO [C:/Users/Prakhar/Downloads/project_1/project_1.srcs/sources_1/imports/tb_release/arm_golden.v:3020]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.x_lut3_mux4
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.ARM_alu_gold
+Compiling architecture behavioral of entity xil_defaultlib.ARM_alu [arm_alu_default]
+Compiling architecture xoroshiro128plus_arch of entity xil_defaultlib.rng_xoroshiro128plus [\rng_xoroshiro128plus("000000010...]
+Compiling architecture behavioral of entity xil_defaultlib.tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 85174251 -regid "211314770_0_0_464" -xml C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/w..."
+    (file "C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Feb 25 11:36:30 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 857.824 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Prakhar/Downloads/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config {C:/Users/Prakhar/Downloads/project_1\tb_behav.wcfg}
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 857.824 ; gain = 0.000
+#forcing SW to prevent U values on LEDs
+add_force {/tb/SW} -radix hex {0000 0ns}
+force61
+#pulsing BTN to create reset signal
+add_force {/tb/BTN} -radix bin {10000 0ns}
+force62
+add_force {/tb/CLK} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+force63
+run 50
+#release BTN to release reset
+add_force {/tb/BTN} -radix hex {0 0ns}
+force64
+#run for some time
+run 100
+run 1000
+run 1000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 857.824 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 25 11:39:05 2017...

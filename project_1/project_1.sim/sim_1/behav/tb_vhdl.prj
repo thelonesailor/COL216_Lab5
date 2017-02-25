@@ -1,0 +1,4 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../project_1.srcs/sources_1/new/ARM_alu.vhd"
+vhdl xil_defaultlib  "../../../project_1.srcs/sources_1/imports/tb_release/rng_xoroshiro128plus.vhd"
+vhdl xil_defaultlib  "../../../project_1.srcs/sources_1/imports/tb_release/tb.vhd"

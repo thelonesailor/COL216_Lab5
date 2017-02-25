@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sat Feb 25 11:45:16 2017
+# Process ID: 15000
+# Log file: D:/4thSemester/COL216/Labs/Lab5/project_1/project_1.runs/synth_1/tb.vds
+# Journal file: D:/4thSemester/COL216/Labs/Lab5/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source tb.tcl

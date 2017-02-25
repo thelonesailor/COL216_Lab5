@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Mon Feb 20 15:47:03 2017
+# Process ID: 4108
+# Log file: C:/Users/DELL/Documents/2015CS10263_667_proj5/project_1/vivado.log
+# Journal file: C:/Users/DELL/Documents/2015CS10263_667_proj5/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:\Users\DELL\Documents\2015CS10263_667_proj5\project_1\project_1.xpr}
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_xsim -simset sim_1 -mode behavioral
+add_force {/ARM_alu/operand1} -radix bin {1 0ns}
+close_sim
+import_files -norecurse C:/Users/DELL/Documents/2015CS10263_667_proj5/project_1/tb_release/tb.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+import_files -norecurse C:/Users/DELL/Documents/2015CS10263_667_proj5/project_1/tb_release/rng_xoroshiro128plus.vhd
+update_compile_order -fileset sources_1
+import_files -norecurse C:/Users/DELL/Documents/2015CS10263_667_proj5/project_1/tb_release/arm_golden.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
