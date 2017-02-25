@@ -117,13 +117,13 @@ result2<= sim_sim when '1',
 
 
 with instruction(21) select 
-result4<=o2 when '0',
-         sim_sim when '1';   
+result4<= o2 when '0',
+          sim_sim when '1';   
 
  
 control1<=instruction(27 downto 25); 
 control2<=instruction(7 downto 4);
-process(control1,control2,operand1,operand2,C_in,V_in,Z_in,N_in,instruction(31 downto 0),result1,result2,result4,invalid,sim_sim)
+process(control1,control2,operand1,operand2,C_in,V_in,Z_in,N_in,instruction(31 downto 0),result1,result2,result4,invalid,sim_sim,res)
 begin
 
 invalid<='0';
@@ -165,7 +165,6 @@ next_C<=( o1(31) and o2(31) ) or ( (o1(31) xor o2(31) xor res(31) ) and (o1(31) 
 with invalid select
 next_Z<=not (or_reduce (res))  when '0',         
             '0' when '1';
-
 
 with invalid select
 predicate<=predicate2 when '0',
